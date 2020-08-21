@@ -5,7 +5,24 @@ import './App.css'
 
 
 class App extends Component{
+
+  state = {
+    todos: [
+      {
+        id: 1,
+        title: 'wash the cloths',
+        user: 'shedrack nicholas',
+      },
+      {
+        id: 2, 
+        title: 'join the facebook developer platform',
+        user: 'dan abramov',
+      }
+    ]
+  }
+
   render(){
+    console.log(this.state.todos)
     return(
       <div>
         <Todos />
