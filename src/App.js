@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Todos from "./components/Todos"
+import Profile from "./components/Profile";
 
 
 import './App.css'
@@ -26,7 +27,8 @@ class App extends Component{
     console.log(this.state.todos)
     return(
       <div className='app-components'>
-        <Todos todos={this.state.todos}/>    
+        <Todos todos={this.state.todos}/>
+        <Profile />    
       </div>
     );
   }
