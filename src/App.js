@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Todos from "./components/Todos";
 
-export default function App(){
-  return(
-    <div>
-      <h1>hello world....</h1>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return(
+      <div>
+        <Todos />
+      </div>
+    );
+  }
 }
+
+
+export default App
